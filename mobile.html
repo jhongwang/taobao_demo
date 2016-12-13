@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<title>淘宝网触屏版</title>
+	<link rel="stylesheet" type="text/css" href="style/mobile.css"/>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	
+</head>
+<body>
+	<div class="wrap">
+		<header id="bar">
+			<div class="tao-logo"></div>
+			<div class="search c-form-suggest" id="J_searchcomplete">
+				<form method="post" id="J_searchform">
+					<div class="sb-box">
+						<input type="text" id="sb-text" autocomplete="off" placeholder value>
+						<button id="sb-submit" type="submit"></button>
+					</div>
+				</form>
+
+			</div>
+		</header>
+		<section id="guide">
+			<div id="first-view">
+				<div class="sliderwrap">
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner01.jpg"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner02.jpg"></a>
+						</div >
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner03.jpg"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner04.png"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner05.jpg"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner06.jpg"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner07.jpg"></a>
+						</div>
+						<div class="wrap">
+							<a href="#"><img src="images/appbanner08.jpg"></a>
+						</div>
+				</div>
+				<div id="indicator" class="indicator">
+					<span class="cur"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			
+			<script type="text/javascript">
+
+				var slider =
+				  Swipe(document.getElementById('first-view'), {
+				    auto: 3000,// 3秒 自动切换
+				    continuous: true,
+				    callback: function(pos) {
+				      var i = circle.length;
+				      while (i--) {
+				        circle[i].className = ' ';
+				      }
+					  if (circle[pos]) {
+						  circle[pos].className = 'cur';
+					  }
+				    }
+				  });
+				var circle = document.getElementById('indicator').getElementsByTagName('span');
+			</script>
+
+			<div id="apps">
+				<div class="sliderwrap">
+					<figure>
+						<div  class="wrap">
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app01.png" alt="我的淘宝">
+									<span>我的淘宝</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app02.png" alt="天猫">
+									<span>天猫</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app03.png" alt="聚划算">
+									<span>聚划算</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app04.png" alt="微淘">
+									<span>微淘</span>
+								</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app05.png" alt="免费APP">
+									<span>免费APP</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app06.png" alt="夜淘宝">
+									<span>夜淘宝</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app07.png" alt="充值中心">
+									<span>充值中心</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app08.png" alt="彩票">
+									<span>彩票</span>
+								</a>
+							</div>
+						</div>
+					</figure>
+					<figure>
+						<div  class="wrap">
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app09.png" alt="酒店客栈">
+									<span>酒店客栈</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app10.png" alt="身边优惠">
+									<span>身边优惠</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app11.png" alt="天猫超市">
+									<span>天猫超市</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app12.png" alt="收藏夹">
+									<span>收藏夹</span>
+								</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app13.png" alt="机票">
+									<span>机票</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app14.png" alt="天天抢拍">
+									<span>天天抢拍</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app15.png" alt="天天特价">
+									<span>天天特价</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app16.png" alt="电影票">
+									<span>电影票</span>
+								</a>
+							</div>
+						</div>
+					</figure>
+					<figure>
+						<div class="wrap">
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app17.png" alt="类目浏览">
+									<span>类目浏览</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app18.png" alt="领集分宝">
+									<span>领集分宝</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app19.png" alt="门票">
+									<span>门票</span>
+								</a>
+								<a href="javascript:void(0)">
+									<img src="images/app20.png" alt="免费试用">
+									<span>免费试用</span>
+								</a>
+							</div>
+							<div>
+								<a href="javascript:void(0)">
+									<img src="images/app21.png" alt="本地餐饮">
+									<span>本地餐饮</span>
+								</a>
+							</div>
+						</div>
+					</figure>
+				</div>
+				<div id="indicators" class="indicator">
+					<span class="cur"></span>
+					<span></span>
+					<span></span>
+				</div>
+			<script type="text/javascript">
+
+				var sliders =
+				  Swipe(document.getElementById('apps'), {
+				 /*   auto: 6000,// 3秒 自动切换*/
+				    continuous: true,
+				    callback: function(pos) {
+				      var i = circles.length;
+				      while (i--) {
+				        circles[i].className = ' ';
+				      }
+				      circles[pos].className = 'cur';
+
+				    }
+				  });
+				var circles = document.getElementById('indicators').getElementsByTagName('span');
+			</script>
+
+				<h4 class="title">
+					<span>导航</span>
+				</h4>
+				<div id="channel" class="tpl c0">
+					<div class="row1col2">
+						<a href="javacsript:void(0)"><img src="images/row01.png"></a>
+						<a href="javacsript:void(0)"><img src="images/row02.jpg"></a>
+					</div>
+					<div class="row1col2">
+						<a href="javacsript:void(0)"><img src="images/row03.png"></a>
+						<a href="javacsript:void(0)"><img src="images/row04.png"></a>
+					</div>
+				</div>
+				<div id="category">
+					<a href="javascript:void(0)">连衣裙</a>
+					<a href="javascript:void(0)">单鞋</a>
+					<a href="javascript:void(0)">打底裤</a>
+					<a href="javascript:void(0)">女包</a>
+				</div>
+				<h4 class="decoration">
+					<span></span>
+				</h4>
+			</div>
+		</section>
+		<section id="cards">
+			<div class="card tpl c2">
+				<div class="title">
+					<span>精彩推荐</span>
+				</div>
+				<div class="row1col1">
+					<a href="javasript:void(0)"><img src="images/rol01.jpg" visibility: visible;></a>
+				</div>
+				<div class="row2col2">
+					<div class="col1">
+						<a href="javacsript:void(0)"><img src="images/daren.jpg" height="100%" visibility: visible;></a>
+					</div>
+					<div class="col2">
+						<div class="row1">
+							<a href="javacsript:void(0)"><img src="images/rol02.png" height="100%" visibility: visible;></a>
+						</div>
+						<div class="row2">
+							<a href="javacsript:void(0)"><img src="images/rol03.jpg" height="100%" visibility: visible;></a>
+						</div>
+					</div>
+				</div>
+				<h4 class="decoration">
+					<span></span>
+				</h4>
+			</div>
+			<div class="card tpl c1">
+				<div class="title">
+					<span>特色市场</span>
+				</div>
+				<div class="row1col1 big">
+					<a href="javasript:void(0)"><img src="images/rol04.jpg" height="100%" visibility: visible;></a>
+				</div>
+				<div class="row1col1">
+					<a href="javasript:void(0)"><img src="images/rol05.jpg" height="100%" visibility: visible;></a>
+				</div>
+				<div class="row1col1">
+					<a href="javasript:void(0)"><img src="images/rol06.png" height="100%" visibility: visible;></a>
+				</div>
+				<h4 class="decoration">
+					<span></span>
+				</h4>
+			</div>
+			<div class="card tpl c1">
+				<div class="title">
+					<span>特享专场</span>
+				</div>
+				<div class="row1col1 big">
+					<a href="javasript:void(0)"><img src="images/sale01.png" height="100%" visibility: visible;></a>
+				</div>
+				<div class="row1col1">
+					<a href="javasript:void(0)"><img src="images/sale02.png" height="100%" visibility: visible;></a>
+				</div>
+				<div class="row1col1">
+					<a href="javasript:void(0)"><img src="images/sale03.png" height="100%" visibility: visible;></a>
+				</div>
+				<h4 class="decoration">
+					<span></span>
+				</h4>
+			</div>
+		</section>
+		<section id="others">
+			<div class="feedback">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" style="color: #f40;">手机淘宝官方多版本下载
+							<i>
+								<em></em>
+								<span></span>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="hots">
+				<ul class="noborder">
+					<li>
+						<a href="javascript:void(0)">应用下载</a>
+						<a href="javascript:void(0)">iPhone应用</a>
+						<a href="javascript:void(0)">Android应用</a>
+					</li>
+				</ul>
+			</div>
+			<div class="feedback">
+				<h3>用户反馈</h3>
+				<ul>
+					<li>
+						<a href="javascript:void(0)">触屏版2.0全新上线，期待您的反馈
+							<i>
+								<em></em>
+								<span></span>
+							</i>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">回首页不方便、找不到旺旺购物车的请进
+							<i>
+								<em></em>
+								<span></span>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer id="copyright">
+			<footer class="footer c-footer">
+				<section class="footer-t c-footer-t">
+					<p class="user-info c-user-info">
+						<span>
+							<a href="javascript:void(0)">登录</a>
+						</span>
+						<span>
+							<a href="javascript:void(0)">注册</a>
+						</span>
+					</p>
+					<p class="gotop c-gotop">
+						<a id="J_GoTop" href="javascript:void(0)">top
+							<b></b>
+						</a>
+						
+					</p>
+				</section>
+				<nav class="footer-l c-footer-l">
+					<a href="javascript:void(0)" target="_blank">电脑版</a>
+				</nav>
+				<p class="copyright c-copyright">
+					© 2014 浙B2-20080224
+					<a href="javascript:void(0)" class="cr-sv c-cr-sv" id="J_service">服务中心</a>
+				</p>
+			</footer>
+		</footer>
+	</div>
+	<!--<div class="tpbtn">
+		<div>
+			<ul>
+				<li class="icontao">
+                		
+                </li>
+			</ul>
+		</div>
+	</div>-->
+	</div>
+</body>
+</html>
